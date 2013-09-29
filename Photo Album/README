@@ -1,0 +1,27 @@
+Photo Album
+CS 58: Operating Systems (Sean Smith)
+Dartmouth College
+Jake Leichtling, 9/27/13
+
+Compilation and Cleanup:
+    - To compile the program, run "$ make"
+    - To compile the program for debugging, run "$ make gdb"
+    - To delete the compilation output, run "$ make clean"
+    - To do a full cleanup (delete compilation output, text editor autosave output, output jpg files,
+            and index.html), run "$ make clean_all"
+
+Running:
+    To run the program, invoke the executable PhotoAlbum from any directory, passing it
+    0 or more image file paths.
+
+Testing:
+    To test the program, I invoked the executable and passed it
+    the file paths of copies of the images found in
+    "tahoe.cs.dartmouth.edu:/net/class/cs58/private_html/internal/work/proj1/photos/".
+    For each photo, I rotated it such that it would be right-side-up in the output, and I recorded
+    the selected rotation option in the image caption. I then ensured that
+    index.html and the files it linked to corresponded to the expected output.
+
+    When entering input, I tested invalid user behavior by entering out of range choice integers,
+    non-integer choices, and empty lines. I also invoked the program with arguments pointing
+    to non-existent files and ensured that it failed in the expected manner.
