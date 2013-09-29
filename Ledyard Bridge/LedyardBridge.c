@@ -21,7 +21,7 @@ int bridge_direction;
 
 /* Function Prototypes */
 void arriveBridge(int direction, char *name);
-void onBridge(direction, char *name);
+void onBridge(int direction, char *name);
 
 /* Function Implementations */
 
@@ -71,7 +71,7 @@ void arriveBridge(int direction, char *name) {
 /*
  Do stuff while you are on the bridge!
  */
-void onBridge(direction, char *name) {
+void onBridge(int direction, char *name) {
   printf("%s: I'm on the bridge, yo, going in direction %d", name, direction);
 }
 
