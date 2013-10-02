@@ -15,6 +15,7 @@ pthread_cond_t cvar[] = { PTHREAD_COND_INITIALIZER, PTHREAD_COND_INITIALIZER };
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 int num_cars_on_bridge = 0;
+int num_cars_waiting[] = { 0, 0 };
 int bridge_direction;
 
 /* Function Prototypes */
@@ -63,22 +64,27 @@ void arriveBridge(int direction, int name) {
     exit(-1);
   }
 
+  num_cars_waiting[direction]++;
+
   // Can I get on the bridge?
   while (true) {
     if (0 == num_cars_on_bridge) {
-      printf("%d: I'm the first car on the bridge going in direction: %d\n", name, direction);
+      printf("%d: I'm the first car on the bridge going in direction: %d.\n", name, direction);
       num_cars_on_bridge++;
       bridge_direction = direction;
       break;
     } else if (direction == bridge_direction && num_cars_on_bridge < MAX_CARS) {
       num_cars_on_bridge++;
-      printf("%d: I'm car #%d on the bridge going in direction: %d\n", name, num_cars_on_bridge, direction);
+      printf("%d: I'm car #%d on the bridge going in direction: %d.\n", name, num_cars_on_bridge, direction);
+      printf("\tThere are %d cars waiting to go to Hanover and %d cars waiting to go to Norwich.\n", num_cars_waiting[TO_HANOVER], num_cars_waiting[TO_NORWICH]);
       break;
     } else {
-      printf("%d: I can't get on the bridge with direction %d. The bridge has %d cars and is in direction %d\n", name, direction, num_cars_on_bridge, bridge_direction);
+      printf("%d: I can't get on the bridge with direction %d. The bridge has %d cars and is in direction %d.\n", name, direction, num_cars_on_bridge, bridge_direction);
       pthread_cond_wait(&cvar[direction], &mutex);
     }
   }
+
+  num_cars_waiting[direction]--;
 
   rc = pthread_mutex_unlock(&mutex);
   if (rc) {
@@ -91,14 +97,14 @@ void arriveBridge(int direction, int name) {
  Do stuff while you are on the bridge!
  */
 void onBridge(int direction, int name) {
-  printf("%d: I'm on the bridge, yo, going in direction %d\n", name, direction);
+  printf("%d: I'm on the bridge, yo, going in direction %d.\n", name, direction);
 }
 
 /*
  Get off the bridge!
  */
 void exitBridge(int direction, int name) {
-  printf("%d: I want to get off the bridge with direction: %d\n", name, direction);
+  printf("%d: I want to get off the bridge with direction: %d.\n", name, direction);
   int rc;
 
   // Obtain the lock that protects the bridge state.

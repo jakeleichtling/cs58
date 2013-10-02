@@ -2,524 +2,555 @@
 5 cars going in each direction, all released at the same time,
 	sleeping for 1 second after getting on, and another second before getting off:
 ---------------------------------------------------------------------------------------
-1: I want to go on the bridge with direction: 1
-1: I'm the first car on the bridge going in direction: 1
+2: I want to go on the bridge with direction: 1
 0: I want to go on the bridge with direction: 1
-0: I'm car #2 on the bridge going in direction: 1
-3: I want to go on the bridge with direction: 1
-3: I'm car #3 on the bridge going in direction: 1
+2: I'm the first car on the bridge going in direction: 1.
+0: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
 7: I want to go on the bridge with direction: 0
-7: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
+7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+4: I want to go on the bridge with direction: 1
+4: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
 8: I want to go on the bridge with direction: 0
-9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
+8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
 5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
+5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
 6: I want to go on the bridge with direction: 0
-2: I want to go on the bridge with direction: 1
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-4: I want to go on the bridge with direction: 1
-4: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-1: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-3: I'm on the bridge, yo, going in direction 1
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-0: I want to get off the bridge with direction: 1
-0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-3: I want to get off the bridge with direction: 1
-3: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-2: I'm the first car on the bridge going in direction: 1
-9: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-7: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-4: I'm car #2 on the bridge going in direction: 1
-5: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-2: I'm on the bridge, yo, going in direction 1
-4: I'm on the bridge, yo, going in direction 1
-2: I want to get off the bridge with direction: 1
-2: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-9: I'm the first car on the bridge going in direction: 0
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-7: I'm the first car on the bridge going in direction: 0
-7: I'm on the bridge, yo, going in direction 0
-7: I want to get off the bridge with direction: 0
-7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-5: I'm the first car on the bridge going in direction: 0
-5: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-8: I'm the first car on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
-8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-6: I'm the first car on the bridge going in direction: 0
-6: I'm on the bridge, yo, going in direction 0
-6: I want to get off the bridge with direction: 0
-6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-10 cars going in random directions, all released at the same time,
-	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
----------------------------------------------------------------------------------------
-0: I want to go on the bridge with direction: 1
-0: I'm the first car on the bridge going in direction: 1
-4: I want to go on the bridge with direction: 1
-4: I'm car #2 on the bridge going in direction: 1
+6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
 1: I want to go on the bridge with direction: 1
-1: I'm car #3 on the bridge going in direction: 1
-5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-6: I want to go on the bridge with direction: 0
-6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-2: I want to go on the bridge with direction: 1
-2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-7: I want to go on the bridge with direction: 1
-7: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-8: I want to go on the bridge with direction: 0
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-3: I want to go on the bridge with direction: 0
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-4: I'm on the bridge, yo, going in direction 1
-1: I'm on the bridge, yo, going in direction 1
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-2: I'm car #2 on the bridge going in direction: 1
-7: I'm car #3 on the bridge going in direction: 1
-2: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-2: I want to get off the bridge with direction: 1
+1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+3: I want to go on the bridge with direction: 1
+3: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+2: I'm on the bridge, yo, going in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+2: I want to get off the bridge with direction: 1.
 2: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-7: I'm on the bridge, yo, going in direction 1
-0: I want to get off the bridge with direction: 1
+0: I want to get off the bridge with direction: 1.
 0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-7: I want to get off the bridge with direction: 1
-7: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-5: I'm the first car on the bridge going in direction: 0
-6: I'm car #2 on the bridge going in direction: 0
-8: I'm car #3 on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
-8: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-3: I'm car #3 on the bridge going in direction: 0
-3: I'm on the bridge, yo, going in direction 0
-3: I want to get off the bridge with direction: 0
-3: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-9: I'm car #3 on the bridge going in direction: 0
-5: I'm on the bridge, yo, going in direction 0
-6: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-6: I want to get off the bridge with direction: 0
-6: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-5 cars going in each direction, all released at the same time,
-	sleeping for 1 second after getting on, and another second before getting off:
----------------------------------------------------------------------------------------
-1: I want to go on the bridge with direction: 1
-4: I want to go on the bridge with direction: 1
-6: I want to go on the bridge with direction: 0
-0: I want to go on the bridge with direction: 1
-2: I want to go on the bridge with direction: 1
-1: I'm the first car on the bridge going in direction: 1
-6: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-3: I want to go on the bridge with direction: 1
-5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-0: I'm car #2 on the bridge going in direction: 1
-8: I want to go on the bridge with direction: 0
-8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-7: I want to go on the bridge with direction: 0
-7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-4: I'm car #3 on the bridge going in direction: 1
-9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-3: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-1: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-4: I'm on the bridge, yo, going in direction 1
-0: I want to get off the bridge with direction: 1
-0: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-2: I'm the first car on the bridge going in direction: 1
-6: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-8: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-3: I'm car #2 on the bridge going in direction: 1
-7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-9: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-2: I'm on the bridge, yo, going in direction 1
-3: I'm on the bridge, yo, going in direction 1
-2: I want to get off the bridge with direction: 1
-2: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-3: I want to get off the bridge with direction: 1
-3: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-6: I'm the first car on the bridge going in direction: 0
-6: I'm on the bridge, yo, going in direction 0
-6: I want to get off the bridge with direction: 0
-6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-5: I'm the first car on the bridge going in direction: 0
-5: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-8: I'm the first car on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
-8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-7: I'm the first car on the bridge going in direction: 0
-7: I'm on the bridge, yo, going in direction 0
-7: I want to get off the bridge with direction: 0
-7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-9: I'm the first car on the bridge going in direction: 0
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-10 cars going in random directions, all released at the same time,
-	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
----------------------------------------------------------------------------------------
-2: I want to go on the bridge with direction: 1
-2: I'm the first car on the bridge going in direction: 1
-4: I want to go on the bridge with direction: 1
-4: I'm car #2 on the bridge going in direction: 1
-1: I want to go on the bridge with direction: 1
-1: I'm car #3 on the bridge going in direction: 1
-0: I want to go on the bridge with direction: 1
-6: I want to go on the bridge with direction: 0
-8: I want to go on the bridge with direction: 0
-3: I want to go on the bridge with direction: 0
-0: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-7: I want to go on the bridge with direction: 1
-7: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-1: I'm on the bridge, yo, going in direction 1
-4: I'm on the bridge, yo, going in direction 1
-2: I'm on the bridge, yo, going in direction 1
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-4: I want to get off the bridge with direction: 1
+1: I'm car #2 on the bridge going in direction: 1.
+	There are 2 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+4: I want to get off the bridge with direction: 1.
 4: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-2: I want to get off the bridge with direction: 1
-2: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-0: I'm the first car on the bridge going in direction: 1
-7: I'm car #2 on the bridge going in direction: 1
-9: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-5: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-3: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-0: I'm on the bridge, yo, going in direction 1
-7: I'm on the bridge, yo, going in direction 1
-0: I want to get off the bridge with direction: 1
-0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-7: I want to get off the bridge with direction: 1
-7: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-9: I'm the first car on the bridge going in direction: 0
-5: I'm car #2 on the bridge going in direction: 0
-6: I'm car #3 on the bridge going in direction: 0
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 0
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 0
-5: I'm on the bridge, yo, going in direction 0
-6: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-8: I'm car #3 on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
-8: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-6: I want to get off the bridge with direction: 0
-6: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
-3: I'm car #2 on the bridge going in direction: 0
-3: I'm on the bridge, yo, going in direction 0
-3: I want to get off the bridge with direction: 0
-3: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-5 cars going in each direction, all released at the same time,
-	sleeping for 1 second after getting on, and another second before getting off:
----------------------------------------------------------------------------------------
-0: I want to go on the bridge with direction: 1
-0: I'm the first car on the bridge going in direction: 1
-2: I want to go on the bridge with direction: 1
-2: I'm car #2 on the bridge going in direction: 1
-4: I want to go on the bridge with direction: 1
-4: I'm car #3 on the bridge going in direction: 1
-6: I want to go on the bridge with direction: 0
-6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-8: I want to go on the bridge with direction: 0
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-7: I want to go on the bridge with direction: 0
-7: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-1: I want to go on the bridge with direction: 1
-1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-3: I want to go on the bridge with direction: 1
-3: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-2: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-4: I'm on the bridge, yo, going in direction 1
-2: I want to get off the bridge with direction: 1
-2: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-0: I want to get off the bridge with direction: 1
-0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-6: I'm the first car on the bridge going in direction: 0
-6: I'm on the bridge, yo, going in direction 0
-6: I want to get off the bridge with direction: 0
-6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-1: I'm the first car on the bridge going in direction: 1
-8: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-9: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-7: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-3: I'm car #2 on the bridge going in direction: 1
-1: I'm on the bridge, yo, going in direction 1
-3: I'm on the bridge, yo, going in direction 1
-1: I want to get off the bridge with direction: 1
+3: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+1: I'm on the bridge, yo, going in direction 1.
+3: I'm on the bridge, yo, going in direction 1.
+1: I want to get off the bridge with direction: 1.
 1: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-3: I want to get off the bridge with direction: 1
+3: I want to get off the bridge with direction: 1.
 3: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-8: I'm the first car on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
-8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-9: I'm the first car on the bridge going in direction: 0
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-7: I'm the first car on the bridge going in direction: 0
-7: I'm on the bridge, yo, going in direction 0
-7: I want to get off the bridge with direction: 0
+7: I'm the first car on the bridge going in direction: 0.
+7: I'm on the bridge, yo, going in direction 0.
+7: I want to get off the bridge with direction: 0.
 7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-5: I'm the first car on the bridge going in direction: 0
-5: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-10 cars going in random directions, all released at the same time,
-	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
----------------------------------------------------------------------------------------
-0: I want to go on the bridge with direction: 1
-0: I'm the first car on the bridge going in direction: 1
-1: I want to go on the bridge with direction: 1
-1: I'm car #2 on the bridge going in direction: 1
-5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-6: I want to go on the bridge with direction: 0
-6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-7: I want to go on the bridge with direction: 1
-7: I'm car #3 on the bridge going in direction: 1
-8: I want to go on the bridge with direction: 0
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-4: I want to go on the bridge with direction: 1
-3: I want to go on the bridge with direction: 0
-2: I want to go on the bridge with direction: 1
-4: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-1: I'm on the bridge, yo, going in direction 1
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-4: I'm car #3 on the bridge going in direction: 1
-2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-4: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-7: I'm on the bridge, yo, going in direction 1
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-2: I'm car #3 on the bridge going in direction: 1
-2: I'm on the bridge, yo, going in direction 1
-2: I want to get off the bridge with direction: 1
-2: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-7: I want to get off the bridge with direction: 1
-7: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-0: I want to get off the bridge with direction: 1
-0: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-5: I'm the first car on the bridge going in direction: 0
-6: I'm car #2 on the bridge going in direction: 0
-8: I'm car #3 on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
-8: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-9: I'm car #3 on the bridge going in direction: 0
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 0
-5: I'm on the bridge, yo, going in direction 0
-6: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-6: I want to get off the bridge with direction: 0
-6: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
-3: I'm car #2 on the bridge going in direction: 0
-3: I'm on the bridge, yo, going in direction 0
-3: I want to get off the bridge with direction: 0
-3: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-5 cars going in each direction, all released at the same time,
-	sleeping for 1 second after getting on, and another second before getting off:
----------------------------------------------------------------------------------------
-0: I want to go on the bridge with direction: 1
-0: I'm the first car on the bridge going in direction: 1
-2: I want to go on the bridge with direction: 1
-2: I'm car #2 on the bridge going in direction: 1
-4: I want to go on the bridge with direction: 1
-5: I want to go on the bridge with direction: 0
-8: I want to go on the bridge with direction: 0
-9: I want to go on the bridge with direction: 0
-3: I want to go on the bridge with direction: 1
-7: I want to go on the bridge with direction: 0
-3: I'm car #3 on the bridge going in direction: 1
-1: I want to go on the bridge with direction: 1
-6: I want to go on the bridge with direction: 0
-1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-4: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-7: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-3: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-2: I'm on the bridge, yo, going in direction 1
-3: I want to get off the bridge with direction: 1
-3: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-0: I want to get off the bridge with direction: 1
-0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-2: I want to get off the bridge with direction: 1
-2: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-1: I'm the first car on the bridge going in direction: 1
-5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1
-4: I'm car #2 on the bridge going in direction: 1
-9: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
-1: I'm on the bridge, yo, going in direction 1
-4: I'm on the bridge, yo, going in direction 1
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-5: I'm the first car on the bridge going in direction: 0
-5: I'm on the bridge, yo, going in direction 0
-5: I want to get off the bridge with direction: 0
-5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-9: I'm the first car on the bridge going in direction: 0
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
-9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-7: I'm the first car on the bridge going in direction: 0
-7: I'm on the bridge, yo, going in direction 0
-7: I want to get off the bridge with direction: 0
-7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-8: I'm the first car on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
+8: I'm the first car on the bridge going in direction: 0.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
 8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
-6: I'm the first car on the bridge going in direction: 0
-6: I'm on the bridge, yo, going in direction 0
-6: I want to get off the bridge with direction: 0
+5: I'm the first car on the bridge going in direction: 0.
+5: I'm on the bridge, yo, going in direction 0.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+9: I'm the first car on the bridge going in direction: 0.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+6: I'm the first car on the bridge going in direction: 0.
+6: I'm on the bridge, yo, going in direction 0.
+6: I want to get off the bridge with direction: 0.
 6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 10 cars going in random directions, all released at the same time,
 	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
 ---------------------------------------------------------------------------------------
-1: I want to go on the bridge with direction: 1
-1: I'm the first car on the bridge going in direction: 1
 0: I want to go on the bridge with direction: 1
-0: I'm car #2 on the bridge going in direction: 1
-6: I want to go on the bridge with direction: 0
-6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1
+0: I'm the first car on the bridge going in direction: 1.
 4: I want to go on the bridge with direction: 1
+4: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
 3: I want to go on the bridge with direction: 0
-4: I'm car #3 on the bridge going in direction: 1
+3: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
 5: I want to go on the bridge with direction: 0
-5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-8: I want to go on the bridge with direction: 0
-8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
+5: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+6: I want to go on the bridge with direction: 0
+6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
 7: I want to go on the bridge with direction: 1
+7: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 3 cars waiting to go to Norwich.
 2: I want to go on the bridge with direction: 1
-7: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
+2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
 9: I want to go on the bridge with direction: 0
-9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1
-1: I'm on the bridge, yo, going in direction 1
-4: I'm on the bridge, yo, going in direction 1
-1: I want to get off the bridge with direction: 1
-1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-4: I want to get off the bridge with direction: 1
-4: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-7: I'm car #2 on the bridge going in direction: 1
-2: I'm car #3 on the bridge going in direction: 1
-2: I'm on the bridge, yo, going in direction 1
-0: I'm on the bridge, yo, going in direction 1
-2: I want to get off the bridge with direction: 1
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+1: I want to go on the bridge with direction: 1
+1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+2: I'm car #3 on the bridge going in direction: 1.
+	There are 2 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+2: I'm on the bridge, yo, going in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+7: I'm on the bridge, yo, going in direction 1.
+2: I want to get off the bridge with direction: 1.
 2: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
-7: I'm on the bridge, yo, going in direction 1
-0: I want to get off the bridge with direction: 1
+1: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+1: I'm on the bridge, yo, going in direction 1.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+0: I want to get off the bridge with direction: 1.
 0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
-7: I want to get off the bridge with direction: 1
+7: I want to get off the bridge with direction: 1.
 7: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
-6: I'm the first car on the bridge going in direction: 0
-5: I'm car #2 on the bridge going in direction: 0
-8: I'm car #3 on the bridge going in direction: 0
-8: I'm on the bridge, yo, going in direction 0
-8: I want to get off the bridge with direction: 0
+3: I'm the first car on the bridge going in direction: 0.
+3: I'm on the bridge, yo, going in direction 0.
+3: I want to get off the bridge with direction: 0.
+3: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+5: I'm the first car on the bridge going in direction: 0.
+6: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 3 cars waiting to go to Norwich.
+8: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 2 cars waiting to go to Norwich.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
 8: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-9: I'm car #3 on the bridge going in direction: 0
-3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 0
-6: I'm on the bridge, yo, going in direction 0
-5: I'm on the bridge, yo, going in direction 0
-6: I want to get off the bridge with direction: 0
+9: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+5: I'm on the bridge, yo, going in direction 0.
+6: I'm on the bridge, yo, going in direction 0.
+6: I want to get off the bridge with direction: 0.
 6: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-3: I'm car #3 on the bridge going in direction: 0
-3: I'm on the bridge, yo, going in direction 0
-3: I want to get off the bridge with direction: 0
-3: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
-5: I want to get off the bridge with direction: 0
+5: I want to get off the bridge with direction: 0.
 5: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
-9: I'm on the bridge, yo, going in direction 0
-9: I want to get off the bridge with direction: 0
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+5 cars going in each direction, all released at the same time,
+	sleeping for 1 second after getting on, and another second before getting off:
+---------------------------------------------------------------------------------------
+0: I want to go on the bridge with direction: 1
+0: I'm the first car on the bridge going in direction: 1.
+2: I want to go on the bridge with direction: 1
+2: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+5: I want to go on the bridge with direction: 0
+5: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+6: I want to go on the bridge with direction: 0
+6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+7: I want to go on the bridge with direction: 0
+7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+1: I want to go on the bridge with direction: 1
+1: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+3: I want to go on the bridge with direction: 1
+3: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+4: I want to go on the bridge with direction: 1
+4: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+2: I'm on the bridge, yo, going in direction 1.
+1: I'm on the bridge, yo, going in direction 1.
+0: I want to get off the bridge with direction: 1.
+0: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+2: I want to get off the bridge with direction: 1.
+2: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+3: I'm the first car on the bridge going in direction: 1.
+5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+6: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+7: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+8: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+9: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+4: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+3: I'm on the bridge, yo, going in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+3: I want to get off the bridge with direction: 1.
+3: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+5: I'm the first car on the bridge going in direction: 0.
+5: I'm on the bridge, yo, going in direction 0.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+6: I'm the first car on the bridge going in direction: 0.
+6: I'm on the bridge, yo, going in direction 0.
+6: I want to get off the bridge with direction: 0.
+6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+7: I'm the first car on the bridge going in direction: 0.
+7: I'm on the bridge, yo, going in direction 0.
+7: I want to get off the bridge with direction: 0.
+7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+8: I'm the first car on the bridge going in direction: 0.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
+9: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+10 cars going in random directions, all released at the same time,
+	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
+---------------------------------------------------------------------------------------
+0: I want to go on the bridge with direction: 1
+0: I'm the first car on the bridge going in direction: 1.
+2: I want to go on the bridge with direction: 1
+2: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+4: I want to go on the bridge with direction: 1
+4: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+5: I want to go on the bridge with direction: 0
+5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+3: I want to go on the bridge with direction: 0
+3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+6: I want to go on the bridge with direction: 0
+6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+7: I want to go on the bridge with direction: 1
+7: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+1: I want to go on the bridge with direction: 1
+1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+2: I'm on the bridge, yo, going in direction 1.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+2: I want to get off the bridge with direction: 1.
+2: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+7: I'm car #2 on the bridge going in direction: 1.
+	There are 2 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+1: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+1: I'm on the bridge, yo, going in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+7: I'm on the bridge, yo, going in direction 1.
+0: I want to get off the bridge with direction: 1.
+0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+7: I want to get off the bridge with direction: 1.
+7: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+5: I'm the first car on the bridge going in direction: 0.
+3: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 4 cars waiting to go to Norwich.
+3: I'm on the bridge, yo, going in direction 0.
+3: I want to get off the bridge with direction: 0.
+3: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+6: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 3 cars waiting to go to Norwich.
+8: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 2 cars waiting to go to Norwich.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
+8: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
+9: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+5: I'm on the bridge, yo, going in direction 0.
+6: I'm on the bridge, yo, going in direction 0.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
+6: I want to get off the bridge with direction: 0.
+6: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+5 cars going in each direction, all released at the same time,
+	sleeping for 1 second after getting on, and another second before getting off:
+---------------------------------------------------------------------------------------
+0: I want to go on the bridge with direction: 1
+0: I'm the first car on the bridge going in direction: 1.
+5: I want to go on the bridge with direction: 0
+5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+2: I want to go on the bridge with direction: 1
+2: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+7: I want to go on the bridge with direction: 0
+7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+1: I want to go on the bridge with direction: 1
+1: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 3 cars waiting to go to Norwich.
+6: I want to go on the bridge with direction: 0
+6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+3: I want to go on the bridge with direction: 1
+3: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+4: I want to go on the bridge with direction: 1
+4: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+2: I'm on the bridge, yo, going in direction 1.
+1: I'm on the bridge, yo, going in direction 1.
+0: I want to get off the bridge with direction: 1.
+0: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+2: I want to get off the bridge with direction: 1.
+2: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+3: I'm the first car on the bridge going in direction: 1.
+5: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+7: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+4: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+8: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+6: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+9: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+3: I'm on the bridge, yo, going in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+3: I want to get off the bridge with direction: 1.
+3: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+5: I'm the first car on the bridge going in direction: 0.
+5: I'm on the bridge, yo, going in direction 0.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+7: I'm the first car on the bridge going in direction: 0.
+7: I'm on the bridge, yo, going in direction 0.
+7: I want to get off the bridge with direction: 0.
+7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+8: I'm the first car on the bridge going in direction: 0.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
+8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+6: I'm the first car on the bridge going in direction: 0.
+6: I'm on the bridge, yo, going in direction 0.
+6: I want to get off the bridge with direction: 0.
+6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+9: I'm the first car on the bridge going in direction: 0.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+10 cars going in random directions, all released at the same time,
+	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
+---------------------------------------------------------------------------------------
+0: I want to go on the bridge with direction: 1
+0: I'm the first car on the bridge going in direction: 1.
+4: I want to go on the bridge with direction: 1
+4: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+1: I want to go on the bridge with direction: 1
+1: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+5: I want to go on the bridge with direction: 0
+5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+2: I want to go on the bridge with direction: 1
+2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+6: I want to go on the bridge with direction: 0
+6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+3: I want to go on the bridge with direction: 0
+3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+7: I want to go on the bridge with direction: 1
+7: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+1: I'm on the bridge, yo, going in direction 1.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+2: I'm car #3 on the bridge going in direction: 1.
+	There are 2 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+7: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+2: I'm on the bridge, yo, going in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+2: I want to get off the bridge with direction: 1.
+2: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+7: I'm on the bridge, yo, going in direction 1.
+0: I want to get off the bridge with direction: 1.
+0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+7: I want to get off the bridge with direction: 1.
+7: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+5: I'm the first car on the bridge going in direction: 0.
+6: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 4 cars waiting to go to Norwich.
+3: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 3 cars waiting to go to Norwich.
+3: I'm on the bridge, yo, going in direction 0.
+3: I want to get off the bridge with direction: 0.
+3: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
+8: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 2 cars waiting to go to Norwich.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
+8: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
+9: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+5: I'm on the bridge, yo, going in direction 0.
+6: I'm on the bridge, yo, going in direction 0.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
+6: I want to get off the bridge with direction: 0.
+6: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+5 cars going in each direction, all released at the same time,
+	sleeping for 1 second after getting on, and another second before getting off:
+---------------------------------------------------------------------------------------
+0: I want to go on the bridge with direction: 1
+0: I'm the first car on the bridge going in direction: 1.
+3: I want to go on the bridge with direction: 1
+3: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+4: I want to go on the bridge with direction: 1
+4: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 0 cars waiting to go to Norwich.
+2: I want to go on the bridge with direction: 1
+1: I want to go on the bridge with direction: 1
+6: I want to go on the bridge with direction: 0
+2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+5: I want to go on the bridge with direction: 0
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+6: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+1: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+7: I want to go on the bridge with direction: 0
+7: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+3: I'm on the bridge, yo, going in direction 1.
+0: I'm on the bridge, yo, going in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+3: I want to get off the bridge with direction: 1.
+3: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+0: I want to get off the bridge with direction: 1.
+0: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+8: I'm the first car on the bridge going in direction: 0.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
+8: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+2: I'm the first car on the bridge going in direction: 1.
+9: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+6: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+1: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 4 cars waiting to go to Norwich.
+5: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+7: I can't get on the bridge with direction 0. The bridge has 2 cars and is in direction 1.
+2: I'm on the bridge, yo, going in direction 1.
+1: I'm on the bridge, yo, going in direction 1.
+2: I want to get off the bridge with direction: 1.
+2: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+9: I'm the first car on the bridge going in direction: 0.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
+9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+6: I'm the first car on the bridge going in direction: 0.
+6: I'm on the bridge, yo, going in direction 0.
+6: I want to get off the bridge with direction: 0.
+6: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+5: I'm the first car on the bridge going in direction: 0.
+5: I'm on the bridge, yo, going in direction 0.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+7: I'm the first car on the bridge going in direction: 0.
+7: I'm on the bridge, yo, going in direction 0.
+7: I want to get off the bridge with direction: 0.
+7: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+10 cars going in random directions, all released at the same time,
+	sleeping for 0 <= t <= 5 seconds after getting on, and another t seconds before getting off:
+---------------------------------------------------------------------------------------
+1: I want to go on the bridge with direction: 1
+1: I'm the first car on the bridge going in direction: 1.
+6: I want to go on the bridge with direction: 0
+6: I can't get on the bridge with direction 0. The bridge has 1 cars and is in direction 1.
+4: I want to go on the bridge with direction: 1
+4: I'm car #2 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+7: I want to go on the bridge with direction: 1
+7: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+8: I want to go on the bridge with direction: 0
+8: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+3: I want to go on the bridge with direction: 0
+3: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+5: I want to go on the bridge with direction: 0
+5: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+2: I want to go on the bridge with direction: 1
+2: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+9: I want to go on the bridge with direction: 0
+9: I can't get on the bridge with direction 0. The bridge has 3 cars and is in direction 1.
+0: I want to go on the bridge with direction: 1
+0: I can't get on the bridge with direction 1. The bridge has 3 cars and is in direction 1.
+1: I'm on the bridge, yo, going in direction 1.
+4: I'm on the bridge, yo, going in direction 1.
+1: I want to get off the bridge with direction: 1.
+1: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+4: I want to get off the bridge with direction: 1.
+4: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+2: I'm car #2 on the bridge going in direction: 1.
+	There are 2 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+0: I'm car #3 on the bridge going in direction: 1.
+	There are 1 cars waiting to go to Hanover and 5 cars waiting to go to Norwich.
+2: I'm on the bridge, yo, going in direction 1.
+7: I'm on the bridge, yo, going in direction 1.
+2: I want to get off the bridge with direction: 1.
+2: I got off the bridge going in direction 1. There are now 2 cars on the bridge.
+0: I'm on the bridge, yo, going in direction 1.
+7: I want to get off the bridge with direction: 1.
+7: I got off the bridge going in direction 1. There are now 1 cars on the bridge.
+0: I want to get off the bridge with direction: 1.
+0: I got off the bridge going in direction 1. There are now 0 cars on the bridge.
+6: I'm the first car on the bridge going in direction: 0.
+8: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 4 cars waiting to go to Norwich.
+8: I'm on the bridge, yo, going in direction 0.
+8: I want to get off the bridge with direction: 0.
+8: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+3: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 3 cars waiting to go to Norwich.
+3: I'm on the bridge, yo, going in direction 0.
+3: I want to get off the bridge with direction: 0.
+3: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+5: I'm car #2 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 2 cars waiting to go to Norwich.
+9: I'm car #3 on the bridge going in direction: 0.
+	There are 0 cars waiting to go to Hanover and 1 cars waiting to go to Norwich.
+6: I'm on the bridge, yo, going in direction 0.
+5: I'm on the bridge, yo, going in direction 0.
+6: I want to get off the bridge with direction: 0.
+6: I got off the bridge going in direction 0. There are now 2 cars on the bridge.
+5: I want to get off the bridge with direction: 0.
+5: I got off the bridge going in direction 0. There are now 1 cars on the bridge.
+9: I'm on the bridge, yo, going in direction 0.
+9: I want to get off the bridge with direction: 0.
 9: I got off the bridge going in direction 0. There are now 0 cars on the bridge.
 ---------------------------------------------------------------------------------------
