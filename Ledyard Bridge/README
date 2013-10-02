@@ -28,7 +28,7 @@ Testing:
        - Its desire to exit the bridge
        - Its success in exiting the bridge
 
-    I ran the test harness 4 times and manually inspected the output to ensure that the program
+    I ran the test harness 3 times and manually inspected the output to ensure that the program
     requirements were satisfied, i.e. the bridge invariants were maintained and resources
     were used efficiently.
 
