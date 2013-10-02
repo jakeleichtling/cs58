@@ -76,7 +76,6 @@ void arriveBridge(int direction, int name) {
     } else if (direction == bridge_direction && num_cars_on_bridge < MAX_CARS) {
       num_cars_on_bridge++;
       printf("%d: I'm car #%d on the bridge going in direction: %d.\n", name, num_cars_on_bridge, direction);
-      printf("\tThere are %d cars waiting to go to Hanover and %d cars waiting to go to Norwich.\n", num_cars_waiting[TO_HANOVER], num_cars_waiting[TO_NORWICH]);
       break;
     } else {
       printf("%d: I can't get on the bridge with direction %d. The bridge has %d cars and is in direction %d.\n", name, direction, num_cars_on_bridge, bridge_direction);
@@ -97,7 +96,23 @@ void arriveBridge(int direction, int name) {
  Do stuff while you are on the bridge!
  */
 void onBridge(int direction, int name) {
+  int rc;
+
+  // Obtain the lock that protects the bridge state.
+  rc = pthread_mutex_lock(&mutex);
+  if (rc) {
+    fprintf(stderr, "Mutex lock failed.\n");
+    exit(-1);
+  }
+
   printf("%d: I'm on the bridge, yo, going in direction %d.\n", name, direction);
+  printf("\tThere are %d cars waiting to go to Hanover and %d cars waiting to go to Norwich.\n", num_cars_waiting[TO_HANOVER], num_cars_waiting[TO_NORWICH]);
+
+  rc = pthread_mutex_unlock(&mutex);
+  if (rc) {
+    fprintf(stderr, "Mutex release failed.\n");
+    exit(-1);
+  }
 }
 
 /*
