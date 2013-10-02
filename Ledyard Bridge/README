@@ -1,0 +1,35 @@
+Ledyard Bridge
+CS 58: Operating Systems (Sean Smith)
+Dartmouth College
+Jake Leichtling, 10/02/13
+
+Compilation and Cleanup:
+    - To compile the program, run "$ make"
+    - To compile the program for debugging, run "$ make gdb"
+    - To delete the compilation output and text editor autosave output, run "$ make clean"
+
+Running:
+    To run the test harness, invoke the executable "LedyardBridge" from any directory.
+
+Testing:
+    To test the program, I wrote a test harness in "TestDriver.c". This test harness executes
+    two test case methods. The first method creates threads for 5 cars going in each direction,
+    releases them all at the same time, and has them sleep for 1 second after getting on the bridge,
+    and then another second before getting off. The second method creates threads for 10 cars
+    with directions determined randomly. They are all released at the same time, and they sleep
+    for a random 0 <= t <= 5 seconds after getting on the bridge and then another t seconds
+    before getting off.
+
+    In each stage of execution, a thread prints out a status message, indicating:
+       - Its intent to enter the bridge
+       - Its success in entering the bridge
+       - Its failure in entering the bridge, resulting in more waiting
+       - Its driving on the bridge
+       - Its desire to exit the bridge
+       - Its success in exiting the bridge
+
+    I ran the test harness 4 times and manually inspected the output to ensure that the program
+    requirements were satisfied, i.e. the bridge invariants were maintained and resources
+    were used efficiently.
+
+    The output of these test runs can be found in "test_output.txt".
